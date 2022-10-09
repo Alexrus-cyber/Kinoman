@@ -1,0 +1,127 @@
+.banner {
+    background-color: #121212;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    padding-top: 100px;
+}
+.banner .container{
+    min-height: 80vh;
+    min-width: 1400px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.places{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    padding: 200px;
+}
+.head{
+    display: inline-flex;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.left{
+    display: flex;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.seat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.choose {
+   margin-top: 20px;
+}
+.choose1 {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.marg{
+    margin-right: 50px;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    padding: 200px;
+}
+
+.green{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.s{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #1c501c;
+    border-radius: 20px;
+    background-color: #1c501c;
+    transition: background 0.2s ease;
+}
+.s1{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #8a1212;
+    border-radius: 20px;
+    background-color: #8a1212;
+    transition: background 0.2s ease;
+}
+
+.span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #1c501c;
+    border-radius: 20px;
+    background-color: #1c501c;
+    transition: background 0.2s ease;
+}
+
+.p{
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+.places1 {
+    display: inline-block;
+}
+
+.selected{
+    background-color: #3e4d9d;
+}
+
+.row{
+    display: flex;
+
+}
+@media (min-width:1920px) {
+     .container {
+        max-width: 100%;
+        padding: 0 150px;
+    }
+}
