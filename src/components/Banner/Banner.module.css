@@ -24,6 +24,17 @@
     margin-bottom: 30px;
     margin-left: 20px;
 }
+.screen{
+    background-image: url("./spider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    width: 100%;
+    margin-bottom: 15px;
+    transform: rotateX(-50deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
 .left{
     display: flex;
     margin-right: 30px;
@@ -124,4 +135,24 @@
         max-width: 100%;
         padding: 0 150px;
     }
+}
+
+.button{
+    margin-top: 100px;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #ff9c00;
+
+}
+.button:hover{
+    opacity: 90%;
+    box-shadow: 0 3px 10px orange;
+}
+.link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    text-decoration: none;
 }

@@ -1,24 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import {  Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import {
-    BrowserRouter as Router
-} from "react-router-dom";
 import styles from './Foot.module.css';
 
 export const Foot = () => {
 
-    const [activeLink, setActiveLink] = useState('Banner');
+    const [setActiveLink] = useState('Banner');
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
-
-
 
 
     return (

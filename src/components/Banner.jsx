@@ -120,6 +120,8 @@ export const Banner = (props) => {
                             <Select styles={props.selectCoast} onChange={onChange1} value={getCoast()} options={coast}/>
                         </div>
                     </div>
+                    <div className={styles.screen}>
+                    </div>
                     <Seat/>
                 </div>
 
@@ -136,7 +138,7 @@ export const Banner = (props) => {
                         <Select styles={props.selectDT} placeholder={'Время'} options={time}/>
                     </div>
                         <div className={styles.choose}>
-                            <button >Привет</button>
+                            <button className={styles.button}><a className={styles.link} href="/Checkout">Оплатить</a></button>
                         </div>
                 </div>
             </div>
