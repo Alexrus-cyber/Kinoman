@@ -10,6 +10,9 @@ import {Checkout} from "./components/Checkout";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Navigation} from "./components/Navigation";
 import {Foot} from "./components/Foot";
+import {Home} from "./components/Home";
+import {Poster} from "./components/Poster";
+import AddressForm from "./components/Checkout/AddressForm";
 
 function App() {
   return (
@@ -18,8 +21,11 @@ function App() {
         <div className="App">
             <Navigation/>
           <Routes>
-            <Route path={'/Banner'} element={ <Banner selectCoast = {Coast} selectF={customStyles} selectDT = {DateTime}/>}/>
-            <Route path={'/Checkout'} element={<Checkout/>}/>
+            <Route path={'Banner'} element={ <Banner selectCoast = {Coast} selectF={customStyles} selectDT = {DateTime}/>}/>
+            <Route path={'Checkout'} element={<Checkout/>}/>
+            <Route path={'Home'} element={<Home/>}/>
+            <Route path={'Poster'} element={<Poster/>}/>
+            <Route path={'AddressForm'} element={<AddressForm/>}/>
           </Routes>
             <Foot/>
       </div>

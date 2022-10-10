@@ -4,7 +4,6 @@ import React, {useState, Component} from "react";
 export const GreenButton = (props) => {
   const [isActive, setIsActive] = useState(false);
   const [count, setCount] = useState(0);
- let basa = 1;
   const handleClick = () => {
     // 👇️ toggle
     setIsActive(current => !current);

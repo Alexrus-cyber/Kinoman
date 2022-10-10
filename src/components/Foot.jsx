@@ -3,6 +3,7 @@ import React from "react";
 import {  Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Foot.module.css';
+import {NavLink} from "react-router-dom";
 
 export const Foot = () => {
 
@@ -22,21 +23,21 @@ export const Foot = () => {
                     </div>
                     <div className={styles.social}>
                         <h3>Навигация</h3>
-                        <Nav.Link href="/Banner"   className={styles.link  } onClick={() => onUpdateActiveLink('Banner')}>Личный кабинет</Nav.Link>
-                        <Nav.Link href="/Checkout"  className={styles.link} onClick={() => onUpdateActiveLink('Checkout')}>Афиша</Nav.Link>
-                        <Nav.Link href="/Banner"  className={styles.link} onClick={() => onUpdateActiveLink('projects')}>Бронирование</Nav.Link>
+                        <NavLink to="Banner"   className={styles.link  } >Личный кабинет</NavLink>
+                        <NavLink to="Checkout"  className={styles.link} >Афиша</NavLink>
+                        <NavLink to="Banner"  className={styles.link} >Бронирование</NavLink>
                     </div>
                     <div className={styles.social}>
                         <h3>Информация</h3>
-                        <Nav.Link href="/Banner"   className={styles.link  } onClick={() => onUpdateActiveLink('Banner')}>О нас</Nav.Link>
-                        <Nav.Link href="/Checkout"  className={styles.link} onClick={() => onUpdateActiveLink('Checkout')}>Отзывы</Nav.Link>
-                        <Nav.Link href="/Banner"  className={styles.link} onClick={() => onUpdateActiveLink('projects')}>Контакты</Nav.Link>
+                        <NavLink to="Banner"   className={styles.link  } >О нас</NavLink>
+                        <NavLink to="Checkout"  className={styles.link} >Отзывы</NavLink>
+                        <NavLink to="Banner"  className={styles.link} >Контакты</NavLink>
                     </div>
                     <div className={styles.social}>
                         <h3>Поддержка</h3>
-                        <Nav.Link href="/Banner"   className={styles.link  } onClick={() => onUpdateActiveLink('Banner')}>Почта</Nav.Link>
-                        <Nav.Link href="/Checkout"  className={styles.link} onClick={() => onUpdateActiveLink('Checkout')}>Нужна помощь</Nav.Link>
-                        <Nav.Link href="/Banner"  className={styles.link} onClick={() => onUpdateActiveLink('projects')}>Бот поддержки</Nav.Link>
+                        <NavLink to="/Banner"   className={styles.link  }>Почта</NavLink>
+                        <NavLink to="/Checkout"  className={styles.link}>Нужна помощь</NavLink>
+                        <NavLink to="/Banner"  className={styles.link}>Бот поддержки</NavLink>
                     </div>
                 </div>
             </Container>

@@ -4,6 +4,7 @@ import Select, {components} from "react-select";
 import {GreenButton} from "./Banner/Buttons/GreenButton";
 import {RedButton} from "./Banner/Buttons/RedButton";
 import {Seat} from "./Banner/Seat";
+import {NavLink} from "react-router-dom";
 
 
 export const Banner = (props) => {
@@ -138,7 +139,7 @@ export const Banner = (props) => {
                         <Select styles={props.selectDT} placeholder={'Время'} options={time}/>
                     </div>
                         <div className={styles.choose}>
-                            <button className={styles.button}><a className={styles.link} href="/Checkout">Оплатить</a></button>
+                            <button className={styles.button}><NavLink className={styles.link} to="/Checkout">Купить билет</NavLink></button>
                         </div>
                 </div>
             </div>

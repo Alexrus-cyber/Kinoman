@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Navigation.module.css';
 import navIcon1 from "../assets/img/nav-icon1.svg";
+import {NavLink} from "react-router-dom";
 
 export const Navigation = () => {
 
@@ -33,11 +34,11 @@ export const Navigation = () => {
         <Navbar  className={styles.Navig +  ' ' + styles.scrolled + ' ' +  scrolled}>
             <Container>
                 <div href="/">
-                    <img className={styles.brand} src={logo} alt="Logo" />
+                    <img className={styles.social} src={logo} alt="Logo" />
                     <Nav className={styles.brand}>
-                        <Nav.Link href="/Banner"  className={styles.link} onClick={() => onUpdateActiveLink('Banner')}>Главная</Nav.Link>
-                        <Nav.Link href="/Checkout"  className={styles.link} onClick={() => onUpdateActiveLink('Checkout')}>Афиша</Nav.Link>
-                        <Nav.Link href="/Banner"  className={styles.link} onClick={() => onUpdateActiveLink('projects')}>Бронирование</Nav.Link>
+                        <NavLink to="Home"  className={styles.link + ' ' + setActiveLink} >Главная</NavLink>
+                        <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
+                        <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
                     </Nav>
                 </div>
                 <div>

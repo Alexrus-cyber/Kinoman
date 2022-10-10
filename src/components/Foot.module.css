@@ -37,6 +37,7 @@
     color: #b2b2b2 !important;
     font-size: 15px;
     display: flex;
+    text-decoration: none;
 }
 .link:hover{
     color: #ffffff !important;
