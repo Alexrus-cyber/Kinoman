@@ -2,16 +2,20 @@
 export const customStyles = {
 
     control: () => ({
-        borderRadius: 5,
-        height: 40,
-        backgroundColor: '#D2C8AC',
+        borderRadius: 15,
+        height: 50,
+        backgroundColor: 'transparent',
+        border: '1px solid #fff',
         width: 400,
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'flex-start'
     }),
     indicatorsContainer: () => ({
-        display: 'none',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: '5px',
     }),
     placeholder: () => ({
         color: 'hsl(0,0%,100%)',
@@ -24,10 +28,10 @@ export const customStyles = {
     }),
 
     input: () => ({
-        color: '#D2C8AC',
+        color: 'transparent',
         margin: '2px',
         paddingBottom: '0px',
-        paddingTop: '8px',
+        paddingTop: '15px',
         visibility: 'visible',
         webkitFlex: '1 1 auto',
         msFlex: '1 1 auto',

@@ -16,7 +16,7 @@
         </value>
       </option>
     </inspection_tool>
-    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false">
       <Languages>
         <language minSize="59" name="JavaScript" />
       </Languages>

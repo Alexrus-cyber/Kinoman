@@ -5,7 +5,8 @@ export default makeStyles((theme) => ({
         position: 'relative',
     },
     toolbar: {
-        paddingTop: 100,
+        paddingTop: 130,
+        paddingBottom: 50,
         backgroundColor:"transparent",
     },
     layout: {

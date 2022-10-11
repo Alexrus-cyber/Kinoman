@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 9999;
     transition:  0.32s ease-in-out;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .circle{
@@ -19,25 +19,30 @@
 
 }
 .brand {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
 }
 .social{
-    margin-left: 100px;
+    margin-left: 106px;
     display: inline-block;
+}
+.contLink{
+    display: flex;
 }
 .logo{
     display: flex;
-    width: 100%;
+    align-items: flex-start;
+    width: 30%;
 }
 .img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
 }
 .link {
     color: #b2b2b2 !important;
     font-size: 15px;
     display: flex;
     text-decoration: none;
+    margin-top: 10px;
 }
 .link:hover{
     color: #ffffff !important;
@@ -74,10 +79,9 @@ span.navbar-text {
 }
 
 
-@media (min-width:1700px) {
-    main .container {
-        max-width: 100%;
-        padding: 0 150px;
+@media (max-width:1440px) {
+    .Navig {
+        padding-top: 50px;
     }
 }
 

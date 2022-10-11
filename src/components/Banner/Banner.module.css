@@ -5,19 +5,41 @@
     background-repeat: no-repeat;
     overflow:hidden;
     padding-top: 100px;
+    position : relative;
 }
+.rows {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-right : 30px;
+
+}
+.rows1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-left : 30px;
+
+
+}
+
+
 .banner .container{
     min-height: 80vh;
-    min-width: 1400px;
+    max-width: 1200px;
     overflow: hidden;
-    display: inline-flex;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .places{
     display: inline-block;
     justify-content: center;
     align-content: center;
-    padding: 200px;
 }
 .head{
     display: inline-flex;
@@ -63,7 +85,6 @@
     display: flex;
     justify-content: center;
     align-content:center;
-    padding: 200px;
 }
 
 .green{
@@ -128,12 +149,22 @@
 
 .row{
     display: flex;
-
+    border-bottom : none;
+    border-top: none;
 }
-@media (min-width:1920px) {
+.buttonRow{
+    border-left: 1px solid rgba(175, 175, 175, 0.47);
+    border-right:1px solid rgba(175, 175, 175, 0.47);
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom:1px solid rgba(175, 175, 175, 0.47);
+}
+
+
+@media (max-width: 1440px) {
      .container {
-        max-width: 100%;
-        padding: 0 150px;
+         width: 80%;
     }
 }
 

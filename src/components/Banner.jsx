@@ -5,7 +5,28 @@ import {GreenButton} from "./Banner/Buttons/GreenButton";
 import {RedButton} from "./Banner/Buttons/RedButton";
 import {Seat} from "./Banner/Seat";
 import {NavLink} from "react-router-dom";
+import {Container } from "react-bootstrap";
+import {makeStyles} from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import {withStyles} from "@material-ui/core";
 
+const useStyles = withStyles(() => ({
+    container: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        color: "white",
+    },
+    textField: {
+        width: 200,
+        color: "white",
+    },
+    input :{
+        color: "white",
+    },
+    label:{
+        color: "white",
+    }
+}));
 
 export const Banner = (props) => {
     const [count, setCount] = useState(false);
@@ -97,9 +118,6 @@ export const Banner = (props) => {
 
 
 
-
-
-
   return (
       <div className={styles.banner} id={'home'}>
             <div  className={styles.container}>
@@ -129,7 +147,7 @@ export const Banner = (props) => {
                 <div className={styles.choice}>
                     <div className={styles.places1}>
                     <div className={styles.choose}>
-                        <Select  components={{Option: IconOption}} styles={props.selectF}  placeholder={'Выберите фильм'} onChange={onChange} value={getValue()} options={options}/>
+                        <Select  components={{Option: IconOption}} styles={props.selectF}  placeholder={'Выберите фильм'}  onChange={onChange} value={getValue()} options={options}/>
                     </div>
                     <div  className={styles.choose}>
                         <Select styles={props.selectF} placeholder={'Выберите кинотеатр'} options={cinema}/>
@@ -137,6 +155,7 @@ export const Banner = (props) => {
                     <div className={styles.choose1}>
                         <Select className={styles.marg} styles={props.selectDT} placeholder={'Дату'}  options={data}/>
                         <Select styles={props.selectDT} placeholder={'Время'} options={time}/>
+
                     </div>
                         <div className={styles.choose}>
                             <button className={styles.button}><NavLink className={styles.link} to="/Checkout">Купить билет</NavLink></button>

@@ -3,7 +3,21 @@ import {InputLabel, Select, MenuItem, Button, Grid, Typography, FormControl} fro
 import { useForm, FormProvider } from 'react-hook-form';
 import {Link, NavLink} from 'react-router-dom';
 import FormInput from './CustomTextField';
-import styles from "./Addres.module.css";
+import styles from "./CssModules/Addres.module.css";
+import {makeStyles} from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+
+const useStyles = makeStyles((theme) => ({
+    container: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
+    textField: {
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        width: 200,
+    },
+}));
 
 const AddressForm = (props) => {
     const data = [{
@@ -31,6 +45,9 @@ const AddressForm = (props) => {
     const handleChange1 = (event: SelectChangeEvent) => {
         setKino(event.target.value);
     };
+
+    const classes = useStyles();
+
   return(
       <>
           <Typography variant="h6" gutterBottom style={{marginBottom: 50}}>Адрессация</Typography>
@@ -70,9 +87,25 @@ const AddressForm = (props) => {
                               <MenuItem value={3}>ТРЦ "РИО, Магистральная ул., 20</MenuItem>
                           </Select>
                       </FormControl>
-                      <input placeholder={'Промокод'} className={styles.input}/>
+                      <form className={classes.container} noValidate>
+                          <TextField style={{
+                              marginLeft: 25,
+                          }}
+                              id="datetime-local"
+                              label="Выберите время"
+                              type="datetime-local"
+                              defaultValue="2017-05-24T10:30"
+                              className={classes.textField}
+                              InputLabelProps={{
+                                  shrink: true,
+                              }}
+                          />
+                      </form>
+
                       <div className={styles.where}>
-                          <button className={styles.button}><NavLink className={styles.link} to={'/Banner'}>Дальше</NavLink></button>
+                          <button onClick={() => {
+                              props.setActiveStep(1);
+                          }} className={styles.button}>Дальше</button>
                       </div>
                   </Grid>
       </>

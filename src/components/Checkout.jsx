@@ -4,6 +4,7 @@ import useStyles from './Checkout/styles';
 import AddressForm from "./Checkout/AddressForm";
 import PaymentForm from "./Checkout/PaymentForm";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Confirmation from "./Checkout/Confirmation";
 
 const steps = ['Адрессация', 'Платеж']
 
@@ -11,16 +12,11 @@ export const Checkout = () => {
     const [activeStep,setActiveStep] = useState(0);
     const classes = useStyles();
 
-    const Confirmation = () => {
-      <div>
-          Confirmation
-      </div>
-    }
 
 
     const Form = () => activeStep === 0
-        ? <AddressForm />
-        : <PaymentForm/>
+        ? <AddressForm setActiveStep={setActiveStep}/>
+        : <PaymentForm setActiveStep={setActiveStep}/>
 
 
 

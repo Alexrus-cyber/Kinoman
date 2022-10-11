@@ -36,7 +36,7 @@ export const Navigation = () => {
                 <div href="/">
                     <img className={styles.social} src={logo} alt="Logo" />
                     <Nav className={styles.brand}>
-                        <NavLink to="Home"  className={styles.link + ' ' + setActiveLink} >Главная</NavLink>
+                        <NavLink to="Home"   className={styles.link} >Главная</NavLink>
                         <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
                         <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
                     </Nav>

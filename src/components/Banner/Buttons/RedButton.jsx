@@ -1,17 +1,17 @@
 import React, {useState, Component} from "react";
-
+import styles from './button.module.css';
 
 export const RedButton = (props) => {
 
     return(
-        <div  style={
+        <div className={styles.button} style={
             {
                 color: '#b7b6b6',
                 fontSize: 10,
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '20px',
+                width: '30px',
                 height: '20px',
                 marginTop: '10px',
                 marginRight: '5px',

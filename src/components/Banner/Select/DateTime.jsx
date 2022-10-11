@@ -4,14 +4,18 @@ export const DateTime = {
     control: () => ({
         borderRadius: 5,
         height: 40,
-        backgroundColor: '#D2C8AC',
+        backgroundColor: 'transparent',
         width: 175,
         display: 'flex',
         alignItems: 'flex-start',
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
+        border: '1px solid #fff',
     }),
     indicatorsContainer: () => ({
-        display: 'none',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+
     }),
     placeholder: () => ({
         color: 'hsl(0,0%,100%)',
@@ -24,7 +28,7 @@ export const DateTime = {
     }),
 
     input: () => ({
-        color: '#D2C8AC',
+        color:'transparent',
         margin: '2px',
         paddingBottom: '0px',
         paddingTop: '8px',

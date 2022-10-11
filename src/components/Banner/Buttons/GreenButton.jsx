@@ -1,5 +1,5 @@
 import React, {useState, Component} from "react";
-
+import styles from './button.module.css';
 
 export const GreenButton = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -11,7 +11,7 @@ export const GreenButton = (props) => {
     // setIsActive(true);
   };
   return(
-      <div onClick={handleClick} style={
+      <div className={styles.button} onClick={handleClick} style={
         {
             fontSize: 10,
             color: '#b7b6b6',
@@ -19,7 +19,7 @@ export const GreenButton = (props) => {
           alignItems: 'center',
           justifyContent: 'center',
           cursor: 'pointer',
-          width: '20px',
+          width: '30px',
           height: '20px',
           marginTop: '10px',
           marginRight: '5px',

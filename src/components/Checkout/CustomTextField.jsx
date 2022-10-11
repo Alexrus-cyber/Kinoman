@@ -37,7 +37,7 @@ function FormInput({control , label} , props) {
             </span>
                         )}
                         renderInput={(params) => (
-                            <TextField style={props.custom}
+                            <TextField
                                 {...params}
                                 label={label}
                                 variant="outlined"
