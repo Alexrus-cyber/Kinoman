@@ -24,21 +24,21 @@ export const Foot = () => {
                     <div className={styles.contLink}>
                         <div className={styles.social}>
                             <h3>Навигация</h3>
-                            <NavLink to="Banner"   className={styles.link  } >Личный кабинет</NavLink>
-                            <NavLink to="Checkout"  className={styles.link} >Афиша</NavLink>
-                            <NavLink to="Banner"  className={styles.link} >Бронирование</NavLink>
+                            <NavLink to="/"   className={styles.link  } >Личный кабинет</NavLink>
+                            <NavLink to="/Poster"  className={styles.link} >Афиша</NavLink>
+                            <NavLink to="/Banner"  className={styles.link} >Бронирование</NavLink>
                         </div>
                         <div className={styles.social}>
                             <h3>Информация</h3>
-                            <NavLink to="Banner"   className={styles.link  } >О нас</NavLink>
-                            <NavLink to="Checkout"  className={styles.link} >Отзывы</NavLink>
-                            <NavLink to="Banner"  className={styles.link} >Контакты</NavLink>
+                            <NavLink to="/"   className={styles.link  } >О нас</NavLink>
+                            <NavLink to="/"  className={styles.link} >Отзывы</NavLink>
+                            <NavLink to="/"  className={styles.link} >Контакты</NavLink>
                         </div>
                         <div className={styles.social}>
                             <h3>Поддержка</h3>
-                            <NavLink to="/Banner"   className={styles.link  }>Почта</NavLink>
-                            <NavLink to="/Checkout"  className={styles.link}>Нужна помощь</NavLink>
-                            <NavLink to="/Banner"  className={styles.link}>Бот поддержки</NavLink>
+                            <NavLink to="/"   className={styles.link  }>Почта</NavLink>
+                            <NavLink to="/"  className={styles.link}>Нужна помощь</NavLink>
+                            <NavLink to="/"  className={styles.link}>Бот поддержки</NavLink>
                         </div>
                     </div>
                     </div>

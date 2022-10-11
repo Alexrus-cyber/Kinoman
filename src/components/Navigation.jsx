@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Navigation.module.css';
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export const Navigation = () => {
 
@@ -36,9 +36,11 @@ export const Navigation = () => {
                 <div href="/">
                     <img className={styles.social} src={logo} alt="Logo" />
                     <Nav className={styles.brand}>
-                        <NavLink to="Home"   className={styles.link} >Главная</NavLink>
+
+                        <NavLink to="/"   className={styles.link} >Главная</NavLink>
                         <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
                         <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
+
                     </Nav>
                 </div>
                 <div>

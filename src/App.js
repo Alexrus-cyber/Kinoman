@@ -7,7 +7,8 @@ import {Coast} from "./components/Banner/Select/Coast";
 import {GreenButton} from "./components/Banner/Buttons/GreenButton";
 import  'bootstrap/dist/css/bootstrap.min.css'
 import {Checkout} from "./components/Checkout";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes , } from "react-router-dom";
+import {Inde } from "react-router-dom";
 import {Navigation} from "./components/Navigation";
 import {Foot} from "./components/Foot";
 import {Home} from "./components/Home";
@@ -18,14 +19,15 @@ function App() {
   return (
 
       <BrowserRouter>
+
         <div className="App">
             <Navigation/>
-          <Routes>
-            <Route path={'Banner'} element={ <Banner selectCoast = {Coast} selectF={customStyles} selectDT = {DateTime}/>}/>
-            <Route path={'Checkout'} element={<Checkout/>}/>
-            <Route path={'Home'} element={<Home/>}/>
-            <Route path={'Poster'} element={<Poster/>}/>
-            <Route path={'AddressForm'} element={<AddressForm/>}/>
+            <Routes>
+            <Route path={'/Banner'} element={ <Banner selectCoast = {Coast} selectF={customStyles} selectDT = {DateTime}/>}/>
+            <Route path={'/Checkout'} element={<Checkout/>}/>
+            <Route path={'/'} element={<Home/>}/>
+            <Route path={'/Poster'} element={<Poster/>}/>
+            <Route path={'/AddressForm'} element={<AddressForm/>}/>
           </Routes>
             <Foot/>
       </div>
