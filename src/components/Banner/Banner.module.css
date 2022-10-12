@@ -163,8 +163,8 @@
 
 
 @media (max-width: 1440px) {
-     .container {
-         width: 80%;
+    .banner .container {
+         transform: scale(0.8);
     }
 }
 

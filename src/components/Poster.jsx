@@ -1,30 +1,45 @@
 import { useState } from "react";
 import React from "react";
+import styles from './Poster/Poster.module.css'
 
 export const Poster = () => {
     return (
-        <div className={'Афиша'}>
-            <div className={'Контейнер'}>
-                <div className={'Афиша'}>
-                    <p></p>
+        <div className={styles.placard}>
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    <p>Афиша</p>
                 </div>
-                <div className={'Select'}>
-                    <div className={''}></div>
-                    <div className={''}></div>
-                    <div className={''}></div>
+                <div className={styles.select}>
+                    <div className={''}>  <p>Афиша</p></div>
+                    <div className={''}>  <p>Афиша</p></div>
+                    <div className={''}>  <p>Афиша</p></div>
                 </div>
-                <div className={'Постеры'}>
-                    <div className={'Итем'}>
-                        <div className={'Контейнер для итема'}>
-                            <div className={'Картинка'}>
+                <div className={styles.posters}>
+                    <div className={styles.item}>
+                        <div className={styles.itemContainer}>
+                            <div className={styles.img}>
 
                             </div>
-                            <div className={'Текст и кнопка'}>
-                                <div className={'Для текста'}>
-                                    <div className={'Заголовок текста'}></div>
-                                    <div className={'текст'}></div>
+                            <div className={styles.buttonTextContainer}>
+                                <div className={styles.textContainer}>
+                                    <div className={styles.textTittle}></div>
+                                    <div className={styles.text}></div>
                                 </div>
-                                <div className={'Кнопка'}></div>
+                                <div className={styles.button}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.item}>
+                        <div className={styles.itemContainer}>
+                            <div className={styles.img}>
+
+                            </div>
+                            <div className={styles.buttonTextContainer}>
+                                <div className={styles.textContainer}>
+                                    <div className={styles.textTittle}></div>
+                                    <div className={styles.text}></div>
+                                </div>
+                                <div className={styles.button}></div>
                             </div>
                         </div>
                     </div>
