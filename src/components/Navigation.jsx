@@ -3,7 +3,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Navigation.module.css';
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon1 from "../assets/img/profile-user.png";
 import {Link, NavLink} from "react-router-dom";
 
 export const Navigation = () => {
@@ -33,17 +33,17 @@ export const Navigation = () => {
     return (
         <Navbar  className={styles.Navig +  ' ' + styles.scrolled + ' ' +  scrolled}>
             <Container>
-                <div href="/">
+                <div >
                     <img className={styles.social} src={logo} alt="Logo" />
                     <Nav className={styles.brand}>
 
                         <NavLink to="/"   className={styles.link} >Главная</NavLink>
-                        <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
+                        <NavLink to="BillBoard"  className={styles.link}>Афиша</NavLink>
                         <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
 
                     </Nav>
                 </div>
-                <div>
+                <div style={{width: 256, height : 58.19}}>
                     <button className={styles.circle}>
                         <img src={navIcon1}/>
                     </button>

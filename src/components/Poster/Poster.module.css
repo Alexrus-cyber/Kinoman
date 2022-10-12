@@ -13,7 +13,7 @@
 }
 .container{
     min-height: 80vh;
-    max-width: 1200px;
+    max-width: 1280px;
     overflow: hidden;
     margin: 0 auto;
     align-items: center;
@@ -39,32 +39,64 @@
 
 .item{
     border: 1px solid #fff;
-    width:400px;
-    height:500px;
-    display: flex;
-    margin: 50px;
+    width:345px;
+    height:494px;
+    margin: 30px 130px 130px 130px;
+    flex-wrap: wrap;
 }
 
 .itemContainer{
-    width: 100%;
+    display: inline-block;
 }
 
+.imgContainer{
+    padding: 29px 0px 36px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img{
-
+    height: 325px;
 }
 
 .textContainer{
-
+    display: inline-block;
+    width: 210px;
+    height: 64px;
+    text-align: left;
 }
 .buttonTextContainer{
+    display: flex;
+    justify-content: space-between;
 
 }
 .text{
-
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    color: #BCBCBC;
 }
 .textTittle{
-
+    font-family: 'Ubuntu', "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
 }
 .button{
+    display: flex;
+    background: #D2C8AC;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selects{
 
 }

@@ -62,9 +62,7 @@ const AddressForm = (props) => {
                               onChange={handleChange}
                               label="Возраст"
                           >
-                              <MenuItem value="">
-                                  <em>None</em>
-                              </MenuItem>
+
                               <MenuItem value={16}>16</MenuItem>
                               <MenuItem value={17}>17</MenuItem>
                               <MenuItem value={18}>18</MenuItem>
@@ -79,9 +77,6 @@ const AddressForm = (props) => {
                               onChange={handleChange1}
                               label="Кинотеатр"
                           >
-                              <MenuItem value="">
-                                  <em>None</em>
-                              </MenuItem>
                               <MenuItem value={1}>ТРЦ "Коллаж, Красносельское ш., 1</MenuItem>
                               <MenuItem value={2}>ул. Советская, 23</MenuItem>
                               <MenuItem value={3}>ТРЦ "РИО, Магистральная ул., 20</MenuItem>

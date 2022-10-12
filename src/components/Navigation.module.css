@@ -13,6 +13,10 @@
     width: 20%;
     height: 20%;
 }
+.user{
+    display: flex;
+    justify-content: center;
+}
 
 .scrolled {
     background-color: #121212;

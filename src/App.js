@@ -26,7 +26,7 @@ function App() {
             <Route path={'/Banner'} element={ <Banner selectCoast = {Coast} selectF={customStyles} selectDT = {DateTime}/>}/>
             <Route path={'/Checkout'} element={<Checkout/>}/>
             <Route path={'/'} element={<Home/>}/>
-            <Route path={'/Poster'} element={<Poster/>}/>
+            <Route path={'/BillBoard'} element={<Poster/>}/>
             <Route path={'/AddressForm'} element={<AddressForm/>}/>
           </Routes>
             <Foot/>
