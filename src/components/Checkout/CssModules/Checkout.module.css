@@ -1,0 +1,13 @@
+.check{
+    display: flex;
+    background-color: #121212;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    position : relative;
+    align-items: center;
+}
+.checkContainer{
+    width: 100%;
+}

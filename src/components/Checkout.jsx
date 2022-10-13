@@ -5,6 +5,7 @@ import AddressForm from "./Checkout/AddressForm";
 import PaymentForm from "./Checkout/PaymentForm";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Confirmation from "./Checkout/Confirmation";
+import styles from "./Checkout/CssModules/Checkout.module.css";
 
 const steps = ['Адрессация', 'Платеж']
 
@@ -22,7 +23,8 @@ export const Checkout = () => {
 
 
   return(
-      <>
+      <div className={styles.check}>
+          <div className={styles.checkContainer}>
       <div className={classes.toolbar}>
           <main className={classes.layout}>
               <Paper className={classes.paper}>
@@ -41,6 +43,7 @@ export const Checkout = () => {
               </Paper>
           </main>
       </div>
-      </>
+          </div>
+      </div>
   );
 }

@@ -1,0 +1,72 @@
+.home {
+    background-color: #121212;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    padding-top: 100px;
+    position : relative;
+}
+
+
+.home .container{
+    min-height: 80vh;
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.image{
+    display: flex;
+
+}
+.p{
+    height: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.h1{
+    width: 487px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+.p1{
+    width: 485px;
+    height: 168px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    /* or 21px */
+
+
+    /* Наборный текст */
+
+    color: #BCBCBC;
+}

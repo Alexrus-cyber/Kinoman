@@ -25,7 +25,7 @@ export const Foot = () => {
                         <div className={styles.social}>
                             <h3>Навигация</h3>
                             <NavLink to="/"   className={styles.link  } >Личный кабинет</NavLink>
-                            <NavLink to="/BillBoard"  className={styles.link} >Афиша</NavLink>
+                            <NavLink to="/Poster"  className={styles.link} >Афиша</NavLink>
                             <NavLink to="/Banner"  className={styles.link} >Бронирование</NavLink>
                         </div>
                         <div className={styles.social}>

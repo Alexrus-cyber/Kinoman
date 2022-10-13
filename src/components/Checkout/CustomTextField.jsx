@@ -23,7 +23,7 @@ function FormInput({control , label} , props) {
 
 
     return (
-        <Grid item xs={12} sm={6}>
+        <Grid style={{width: 250,}} item>
             <Controller
                 render={({ field }) => (
                     <Autocomplete

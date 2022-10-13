@@ -38,8 +38,9 @@ export const Navigation = () => {
                     <Nav className={styles.brand}>
 
                         <NavLink to="/"   className={styles.link} >Главная</NavLink>
-                        <NavLink to="BillBoard"  className={styles.link}>Афиша</NavLink>
+                        <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
                         <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
+                        <NavLink to="Help"  className={styles.link}>Помощь</NavLink>
 
                     </Nav>
                 </div>
