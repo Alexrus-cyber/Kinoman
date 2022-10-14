@@ -28,6 +28,16 @@
     display: flex;
     width: 100%;
 }
+@media (max-width: 1440px) {
+   .placard .container {
+        width: 1100px ;
+
+    }
+    .item{
+        margin: 30px 80px 80px 80px !important;
+    }
+}
+
 
 .posters{
     display: flex;
@@ -95,6 +105,31 @@
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.divs{
+
+    padding:  0px;
+    font-size: 15px;
+    font-weight:500;
+    color:BCBCBC;
+    border: 1px solid transparent;
+    background-color:  transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.active{
+    padding: 5px ;
+    font-size: 15px;
+    font-weight: 700 ;
+    color: white;
+    border: 1px solid #4151f6 ;
+    background-color:#4151f6 ;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px ;
 }
 
 .selects{

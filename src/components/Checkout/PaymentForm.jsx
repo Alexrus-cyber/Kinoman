@@ -29,17 +29,7 @@ const PaymentForm = (props) => {
                         <input placeholder={'Visa/MasterCard'} className={styles.input1}/>
                     </div>
                     <div  className={styles.container}>
-                        <form className={classes.container} noValidate>
-                            <TextField style={{ marginRight: 30}}
-                                       id="date"
-                                       type="date"
-                                       defaultValue="Дата"
-                                       className={classes.textField}
-                                       InputLabelProps={{
-                                           shrink: true,
-                                       }}
-                            />
-                        </form>
+                        <input style={{width: 80}} placeholder={'00/00'} className={styles.input}/>
                         <input style={{width: 50}} placeholder={'cvv'} className={styles.input}/>
                     </div>
                     <div className={styles.container}>
@@ -50,6 +40,9 @@ const PaymentForm = (props) => {
                     <img  src={image}/>
                 </div>
             </div>
+            <div style={{width: '100%', display: "flex", alignItems: "flex-start" , justifyContent: "flex-start" }}>
+                <p  style={{marginLeft: '5px'}}>Итог: 300p</p>
+            </div>
             <div className={styles.where}>
                 <button onClick={() => {
                     props.setActiveStep(0);
@@ -57,7 +50,7 @@ const PaymentForm = (props) => {
 
                 <button onClick={() => {
                     props.setActiveStep(2);
-                }} className={styles.button}>Дальше</button>
+                }} className={styles.button}>Оплатить</button>
             </div>
 
         </div>

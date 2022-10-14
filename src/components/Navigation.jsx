@@ -45,9 +45,7 @@ export const Navigation = () => {
                     </Nav>
                 </div>
                 <div style={{width: 256, height : 58.19}}>
-                    <button className={styles.circle}>
-                        <img src={navIcon1}/>
-                    </button>
+
                 </div>
             </Container>
         </Navbar>

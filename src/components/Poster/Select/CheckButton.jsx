@@ -12,17 +12,17 @@ export const CheckButton = (props) => {
     };
     return(
 
-            <div onClick={handleClick} style={{
-                padding: isActive ? '5px' : '0px',
-                fontSize: 15,
-                fontWeight: isActive ? "700" : "500" ,
-                color: isActive ? 'white' : "#BCBCBC",
-                border: isActive ? '1px solid #4151f6' : '1px solid transparent' ,
-                backgroundColor: isActive ? "#4151f6" : "transparent",
-                borderRadius: '15px',
-                cursor: "pointer",
-                marginRight: isActive ? '10px' : '10px',
-            }}>{props.text}
-            </div>
+        <div onClick={handleClick} style={{
+            padding: isActive ? '5px' : '5px',
+            fontSize: 15,
+            fontWeight: isActive ? "700" : "500" ,
+            color: isActive ? 'white' : "#BCBCBC",
+            border: isActive ? '1px solid #4151f6' : '1px solid transparent' ,
+            backgroundColor: isActive ? "#4151f6" : "transparent",
+            borderRadius: '15px',
+            cursor: "pointer",
+            marginRight: isActive ? '10px' : '10px',
+        }}>{props.text}
+        </div>
     );
 }

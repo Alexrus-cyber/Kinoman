@@ -11,6 +11,10 @@ import {BillBoard} from "./Poster/BillBoard";
 import Select from "react-select";
 import {customStyles} from "./Poster/Select/customStyles";
 import {CheckButton} from "./Poster/Select/CheckButton";
+import useStyles from "./Checkout/styles";
+import AddressForm from "./Checkout/AddressForm";
+import PaymentForm from "./Checkout/PaymentForm";
+import {UncheckedButton} from "./Poster/Select/UncheckedButton";
 
 export const Poster = () => {
 
@@ -27,6 +31,12 @@ export const Poster = () => {
         value: 'Goodbye,America',
         label: 'Goodbye,America'
     }]
+    const sort = {
+        name: 0,
+        rarity: 1,
+        popular: 1,
+    }
+    const [activeStep,setActiveStep] = useState(0);
 
 
     return (
