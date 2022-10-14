@@ -30,7 +30,7 @@ export const Foot = () => {
                         </div>
                         <div className={styles.social}>
                             <h3>Информация</h3>
-                            <NavLink to="/"   className={styles.link  } >О нас</NavLink>
+                            <NavLink to="/About"   className={styles.link  } >О нас</NavLink>
                             <NavLink to="/Review"  className={styles.link} >Отзывы</NavLink>
                             <NavLink to="/"  className={styles.link} >Контакты</NavLink>
                         </div>
