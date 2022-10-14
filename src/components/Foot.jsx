@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 import {  Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
-import styles from './Foot.module.css';
+import styles from './Footer/Foot.module.css';
 import {NavLink} from "react-router-dom";
 
 export const Foot = () => {
@@ -24,21 +24,21 @@ export const Foot = () => {
                     <div className={styles.contLink}>
                         <div className={styles.social}>
                             <h3>Навигация</h3>
-                            <NavLink to="/"   className={styles.link  } >Личный кабинет</NavLink>
+                            <NavLink to="/"   className={styles.link  } >Главная</NavLink>
                             <NavLink to="/Poster"  className={styles.link} >Афиша</NavLink>
                             <NavLink to="/Banner"  className={styles.link} >Бронирование</NavLink>
                         </div>
                         <div className={styles.social}>
                             <h3>Информация</h3>
                             <NavLink to="/"   className={styles.link  } >О нас</NavLink>
-                            <NavLink to="/"  className={styles.link} >Отзывы</NavLink>
+                            <NavLink to="/Review"  className={styles.link} >Отзывы</NavLink>
                             <NavLink to="/"  className={styles.link} >Контакты</NavLink>
                         </div>
                         <div className={styles.social}>
                             <h3>Поддержка</h3>
                             <NavLink to="/"   className={styles.link  }>Почта</NavLink>
-                            <NavLink to="/"  className={styles.link}>Нужна помощь</NavLink>
-                            <NavLink to="/"  className={styles.link}>Бот поддержки</NavLink>
+                            <NavLink to="/Help"  className={styles.link}>Нужна помощь</NavLink>
+                            <a href={'https://t.me/+tnYNFFwCLXc2NTk6'}  className={styles.link}>Бот поддержки</a>
                         </div>
                     </div>
                     </div>

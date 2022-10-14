@@ -29,7 +29,7 @@ const PaymentForm = (props) => {
                         <input placeholder={'Visa/MasterCard'} className={styles.input1}/>
                     </div>
                     <div  className={styles.container}>
-                        <input style={{width: 80}} placeholder={'00/00'} className={styles.input}/>
+                        <input style={{width: 80}} placeholder={'MM/YY'} className={styles.input}/>
                         <input style={{width: 50}} placeholder={'cvv'} className={styles.input}/>
                     </div>
                     <div className={styles.container}>

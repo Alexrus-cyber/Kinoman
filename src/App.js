@@ -14,6 +14,7 @@ import {Home} from "./components/Home";
 import {Poster} from "./components/Poster";
 import AddressForm from "./components/Checkout/AddressForm";
 import {Help} from "./components/Help";
+import {Reviews} from "./components/Reviews";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path={'/Poster'} element={<Poster/>}/>
             <Route path={'/AddressForm'} element={<AddressForm/>}/>
             <Route path={'/Help'} element={<Help/>}/>
+            <Route path={'/Review'} element={<Reviews/>}/>
 
           </Routes>
             <Foot/>
