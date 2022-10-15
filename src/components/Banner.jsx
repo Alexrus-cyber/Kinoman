@@ -9,6 +9,7 @@ import {Container } from "react-bootstrap";
 import {makeStyles} from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import {withStyles} from "@material-ui/core";
+import image from "./Banner/Duga.PNG"
 
 const useStyles = withStyles(() => ({
     container: {
@@ -139,7 +140,8 @@ export const Banner = (props) => {
                             <Select styles={props.selectCoast} onChange={onChange1} value={getCoast()} options={coast}/>
                         </div>
                     </div>
-                    <div className={styles.screen}>
+                    <div >
+                        <img style={{width: 500, marginBottom: 20}} src={image}/>
                     </div>
                     <Seat/>
                 </div>

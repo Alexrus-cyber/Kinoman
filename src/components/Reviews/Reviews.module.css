@@ -36,14 +36,18 @@
 
 .itemContainer{
     display: flex;
-    column-gap: 200px;
+    column-gap: 100px;
     align-items: center;
     width: 1300px;
     justify-content: flex-end   ;
     margin-top: 200px;
 }
-.text{
+.data{
     display: flex;
+    justify-content: space-between;
+}
+.text{
+    display: inline-block;
     text-align: left;
     background-color: #4b4b4b;
     padding: 50px;
@@ -58,7 +62,8 @@
 
 
 .img {
-    width: 300px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
     border-radius: 300px;
+    border: 7px solid #d0c6ac;
 }

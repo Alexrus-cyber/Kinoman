@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./Reviews/Reviews.module.css";
-import image from "./Reviews/img/Man.jpeg";
+import image from "./Reviews/img/man.jpg";
 import image1 from "./Reviews/img/girl.jpg";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";

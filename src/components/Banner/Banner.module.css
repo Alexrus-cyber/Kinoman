@@ -171,16 +171,16 @@
 }
 
 .button{
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 20px;
     width: 250px;
     height: 40px;
-    background-color: #e8a326;
+    background-color: #1c4f1d;
 
 }
 .button:hover{
     opacity: 90%;
-    box-shadow: 0 3px 10px orange;
+
 }
 .link {
     font-weight: 400;

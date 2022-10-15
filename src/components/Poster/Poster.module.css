@@ -99,12 +99,19 @@
 }
 .button{
     display: flex;
-    background: #D2C8AC;
+    background: transparent;
+    border: 1px solid;
     width: 70px;
     height: 70px;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background: #1c501c;
+
 }
 
 .divs{

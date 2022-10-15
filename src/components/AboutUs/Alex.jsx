@@ -51,7 +51,7 @@ export const Alex = (props) => {
       <div className={styles.container}>
           <div className={styles.superCont}>
               <span className={styles.tagline}>{props.tagline}</span>
-              <h1 className={styles.h1}>{props.h1} <span className={styles.txtRotate} data-rotate='[ "Реакт разработчик", "Веб дизайнер", "UI/UX дизайнер" ]'></span><span  className={styles.wrap}>{text}</span></h1>
+              <h1 className={styles.h1}>{props.h1}  <span className={styles.txtRotate} data-rotate='[ "Реакт разработчик", "Веб дизайнер", "UI/UX дизайнер" ]'> </span><span  className={styles.wrap}>{text}</span></h1>
               <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <button  className={styles.button} ><a className={styles.a} href={'https://vk.com/arassadin2014'}>Let connect</a><a className={styles.a} href={'https://vk.com/arassadin2014'}><ArrowRightCircle size={25}></ArrowRightCircle></a> </button>
           </div>

@@ -15,7 +15,7 @@ export const AboutUs = () => {
     return (
         <div className={styles.AboutUs} >
             <Alex tagline ={'О разработчике'}
-                  h1={'Привет я Алексей, '}
+                  h1={'Привет я Алексей,'}
                   text = {'Реакт разработчик'}
                   text1={'Веб дизайнер'}
                   text2={'UI/UX дизайнер'}
