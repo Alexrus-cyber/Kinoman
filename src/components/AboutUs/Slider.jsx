@@ -8,7 +8,7 @@ import arrow2 from "./Slider/img/arrow2.svg";
 import colorSharp from "./Slider/img/color-sharp.png"
 import styles from './Slider/Slider.module.css'
 
-export const Slider = () => {
+export const Slider = (props) => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -34,24 +34,24 @@ export const Slider = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className={styles.bx}>
-                            <h2>Skills</h2>
+                            <h2>Скиллы</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                             <Carousel responsive={responsive} infinite={true} className={`owl-carousel owl-theme ${styles.sliderMain}`}>
                                 <div className={styles.image}>
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <div className={styles.h1} ><h1>{props.procents1}</h1></div>
+                                    <h5>{props.text1}</h5>
                                 </div>
                                 <div className={styles.image}>
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <div className={styles.h1} ><h1>{props.procents2}</h1></div>
+                                    <h5>{props.text2}</h5>
                                 </div>
                                 <div className={styles.image}>
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <div  className={styles.h1} ><h1>{props.procents3}</h1></div>
+                                    <h5>{props.text3}</h5>
                                 </div>
                                 <div className={styles.image}>
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <div className={styles.h1} ><h1>{props.procents4}</h1></div>
+                                    <h5>{props.text4}</h5>
                                 </div>
                             </Carousel>
                         </div>

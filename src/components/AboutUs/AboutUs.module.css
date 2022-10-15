@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow:hidden;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
@@ -22,11 +22,21 @@
     display: flex;
     padding-top: 100px;
 }
+
+@media (max-width:1280px) {
+    .AboutUs .container{
+        width: 900px;
+    }
+    .AboutUs .mainImage{
+        width: 50%;
+        height: 40%;
+    }
+}
 .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
     padding: 8px 10px;
-    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    background: linear-gradient(90.21deg, #e30d0d -10.91%, purple 101.58%);
     font-size: 30px;
     margin-bottom: 16px;
     border-radius: 20px;
@@ -65,8 +75,7 @@
         text-shadow:0 0 10px #d30e0e,
         0 0 20px #d30e0e,
         0 0 40px #d30e0e,
-        0 0 80px #d30e0e,
-        0 0 160px;
+
     }
 }
 .p {
@@ -96,9 +105,10 @@
     align-items: center;
 }
 
-.main-image {
-    animation: updown 3s linear infinite;
+.mainImage {
     width: 30%;
+    height: 60%;
+    border-radius: 200px;
 }
 @keyframes updown {
     0% {

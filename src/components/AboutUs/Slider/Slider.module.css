@@ -1,7 +1,23 @@
 .slider {
     padding: 0 0 50px 0;
     position: relative;
-    margin-top: 300px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid red;
+    border-image: linear-gradient(to right, red, purple);
+    border-image-slice: 1;
+    border-radius: 100px;
+    padding: 30px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.textWrap{
+    word-wrap: normal;
 }
 .bx {
     background: #151515;
@@ -22,13 +38,16 @@
     margin: 14px 0 75px 0;
 }
 .sliderMain {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 .image {
-    width: 50%;
-    margin: 0 auto 15px auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 150px;
 }
 .back {
     top: 28%;
