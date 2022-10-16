@@ -22,7 +22,7 @@ export const Form = () => {
                         <p className={styles.simple}>Сообщение:</p>
                     </div>
                     <div className={styles.inputContainer}>
-                        <textarea style={{width: 380, height: 150}} className={styles.input}/>
+                        <textarea style={{width: 380, height: 150, resize: "none"}} className={styles.input}/>
                     </div>
                 </div>
             </div>
