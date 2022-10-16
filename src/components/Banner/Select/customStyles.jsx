@@ -66,7 +66,10 @@ export const customStyles = {
         opacity: 1,
         webkitTransition: 'opacity 300ms',
         transition: 'opacity 300ms',
-    })
-
+    }),
+    indicatorSeparator: () => ({
+        backgroundColor: 'transparent',
+        display: 'none',
+    }),
 
 }

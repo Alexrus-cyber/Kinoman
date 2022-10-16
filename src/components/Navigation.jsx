@@ -3,12 +3,10 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Navigation/Navigation.module.css';
-import navIcon1 from "../assets/img/profile-user.png";
-import {Link, NavLink} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 export const Navigation = () => {
 
-    const [activeLink, setActiveLink] = useState('/Banner');
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -25,22 +23,19 @@ export const Navigation = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
 
-
+    const activeLink = styles.active;
+    const normalLink = styles.link;
     return (
         <Navbar  className={styles.Navig +  ' ' + styles.scrolled + ' ' +  scrolled}>
             <Container>
                 <div >
                     <img className={styles.social} src={logo} alt="Logo" />
                     <Nav className={styles.brand}>
-
-                        <NavLink to="/"   className={styles.link} >Главная</NavLink>
-                        <NavLink to="Poster"  className={styles.link}>Афиша</NavLink>
-                        <NavLink to="Banner"  className={styles.link}>Бронирование</NavLink>
-                        <NavLink to="Help"  className={styles.link}>Помощь</NavLink>
+                        <NavLink end to={'/'}  className={({ isActive }) => (isActive ? activeLink : normalLink)} >Главная</NavLink>
+                        <NavLink to={'Poster'} className={({ isActive }) => (isActive ? styles.active : styles.link)}>Афиша</NavLink>
+                        <NavLink to="Banner"  className={({ isActive }) => (isActive ? styles.active : styles.link)}>Бронирование</NavLink>
+                        <NavLink to="Help"  className={({ isActive }) => (isActive ? styles.active : styles.link)}>Помощь</NavLink>
 
                     </Nav>
                 </div>

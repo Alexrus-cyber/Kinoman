@@ -1,10 +1,9 @@
-import React, {useEffect, useRef, useState} from "react";
+import React from "react";
 import styles from "./Reviews/Reviews.module.css";
 import image from "./Reviews/img/man.jpg";
 import image1 from "./Reviews/img/girl.jpg";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {duration} from "@material-ui/core";
 import {Item} from "./Reviews/items/Item";
 import {LeftItem} from "./Reviews/items/LeftItem";
 gsap.registerPlugin(ScrollTrigger)

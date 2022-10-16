@@ -1,6 +1,5 @@
 import styles from "../Reviews.module.css";
-import image from "../../Home/img/Hello.PNG";
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import gsap from "gsap";
 
 export const Item = (props) => {
@@ -28,7 +27,7 @@ export const Item = (props) => {
                 </div>
             </div>
             <div>
-                <img className={styles.img} src={props.image}/>
+                <img alt={'Hello'} className={styles.img} src={props.image}/>
             </div>
         </div>
     );

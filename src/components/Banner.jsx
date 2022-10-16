@@ -1,42 +1,13 @@
-import React, {useState, Component} from "react";
+import React, {useState} from "react";
 import styles from './Banner/Banner.module.css';
-import Select, {components} from "react-select";
-import {GreenButton} from "./Banner/Buttons/GreenButton";
-import {RedButton} from "./Banner/Buttons/RedButton";
+import Select from "react-select";
 import {Seat} from "./Banner/Seat";
 import {NavLink} from "react-router-dom";
-import {Container } from "react-bootstrap";
-import {makeStyles} from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import {withStyles} from "@material-ui/core";
 import image from "./Banner/Duga.PNG"
 
-const useStyles = withStyles(() => ({
-    container: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        color: "white",
-    },
-    textField: {
-        width: 200,
-        color: "white",
-    },
-    input :{
-        color: "white",
-    },
-    label:{
-        color: "white",
-    }
-}));
+
 
 export const Banner = (props) => {
-    const [count, setCount] = useState(false);
-    
-    const x = () => {
-      setCount(count + 1)
-
-    }
-
 
     const options = [{
         value: 'Spider-man',
@@ -105,18 +76,6 @@ export const Banner = (props) => {
     const onChange1 = (newValue) => {
         setCurrentCoast(newValue.value)
     }
-    const { Option } = components;
-    const IconOption = props => (
-        <Option {...props}>
-            <img
-                src={require('./Banner/mark.png' )}
-                style={{ width: 26, marginRight: '20px', display: "inline-flex", }}
-                alt={props.data.label}
-            />
-            {props.data.label}
-        </Option>
-    );
-
 
 
   return (
@@ -125,7 +84,7 @@ export const Banner = (props) => {
                 <div className={styles.places}>
                     <div className={styles.head}>
                         <div className={styles.left}>
-                            <p className={styles.p}>Бронирование</p>
+                            <p style={{marginRight: 74}} className={styles.p}>Бронирование</p>
                         </div>
                         <div className={styles.red}>
                             <div>
@@ -141,7 +100,7 @@ export const Banner = (props) => {
                         </div>
                     </div>
                     <div >
-                        <img style={{width: 500, marginBottom: 20}} src={image}/>
+                        <img style={{width: 500, marginBottom: 20}} src={image} alt={'Hello'}/>
                     </div>
                     <Seat/>
                 </div>
@@ -149,7 +108,7 @@ export const Banner = (props) => {
                 <div className={styles.choice}>
                     <div className={styles.places1}>
                     <div className={styles.choose}>
-                        <Select  components={{Option: IconOption}} styles={props.selectF}  placeholder={'Выберите фильм'}  onChange={onChange} value={getValue()} options={options}/>
+                        <Select  styles={props.selectF}  placeholder={'Выберите фильм'}  onChange={onChange} value={getValue()} options={options}/>
                     </div>
                     <div  className={styles.choose}>
                         <Select styles={props.selectF} placeholder={'Выберите кинотеатр'} options={cinema}/>

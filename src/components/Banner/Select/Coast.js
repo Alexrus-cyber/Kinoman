@@ -1,56 +1,47 @@
 
 export const Coast = {
 
-    control: () => ({
-        borderRadius: 5,
-        height:25,
-        backgroundColor: '#D2C8AC',
-        width: 100,
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        marginBottom: 10,
+    valueContainer: () => ({
+        display: 'grid',
+        alignItems: 'center'
     }),
-    indicatorsContainer: () => ({
-        display: 'none',
+    control: () => ({
+        borderRadius: 15,
+        color: "white",
+        height: 40,
+        backgroundColor: 'transparent',
+        width: 110,
+        display: 'flex',
+        marginBottom: 5,
     }),
     placeholder: () => ({
-        color: 'hsl(0,0%,100%)',
+        color: '#BCBCBC',
         gridArea: '1/1/1/1',
         marginLeft: '2px',
-        marginRight: '150px',
         boxSizing: 'border-box',
-        alignItems: 'flex-end',
-        justifyContent: 'flex-end'
+        alignItems: 'flex-start',
+        justifyContent: 'center'
     }),
-
-    input: () => ({
-        color: '#D2C8AC',
-        paddingBottom: '0px',
-        visibility: 'visible',
-        webkitFlex: '1 1 auto',
-        msFlex: '1 1 auto',
-        flex: '1 1 auto',
-        display: 'inline-grid',
-        gridArea: '1/1/2/3',
-        gridTemplateColumns: '0 min-content',
-        boxSizing: 'border-box',
-    }) ,
-    menu: (provided, state) => ({
-        ...provided,
-        backgroundColor: '#D2C8AC',
-
+    indicatorSeparator: () => ({
+        backgroundColor: 'transparent',
+        display: 'none',
     }),
     option: (provided, state) => ({
         ...provided,
-        borderBottom: '1px dotted pink',
-        color: state.isSelected ? 'white' : 'brown',
+        color: state.isSelected ? 'white' : 'white',
+        backgroundColor: state.isSelected ? '#1c4e1e' : 'black',
 
     }),
+    menu: (provided, state) => ({
+        ...provided,
+        backgroundColor: 'transparent',
 
+    }),
     singleValue:() => ({
         color:  'hsl(0,0%,100%)',
         gridArea:' 1/1/2/3',
+        marginLeft: '2px',
+        marginRight: '2px',
         maxWidth: '100%',
         overflow: 'hidden',
         textOverflow: 'ellipsis',

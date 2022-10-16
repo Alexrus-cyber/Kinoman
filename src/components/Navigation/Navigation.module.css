@@ -40,14 +40,16 @@
     color: #32b473 !important;
     opacity: 50%;
 }
-.link .active{
-    color: #1c442f !important;
-}
 
 
 .active{
-    color: red;
-    background-color: red;
+    font-weight: 400;
+    color: #05624f !important;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    margin-right: 20px;
 }
 
 span.navbar-text {

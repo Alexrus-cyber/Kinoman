@@ -17,6 +17,10 @@ export const DateTime = {
         alignItems: 'center',
 
     }),
+    indicatorSeparator: () => ({
+        backgroundColor: 'transparent',
+        display: 'none',
+    }),
     placeholder: () => ({
         color: 'hsl(0,0%,100%)',
         gridArea: '1/1/1/1',
