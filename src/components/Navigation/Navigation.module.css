@@ -72,6 +72,7 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .bef {
     content: "";
     width: 42px;
@@ -83,7 +84,10 @@ span.navbar-text {
     transition: 0.3s ease-in-out;
 }
 
-
+.img{
+    height: 50px;
+    width: 50px;
+}
 @media (min-width:1700px) {
     main .container {
         max-width: 100%;

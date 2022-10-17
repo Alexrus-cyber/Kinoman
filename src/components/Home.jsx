@@ -43,7 +43,7 @@ export const Home = () => {
                         12 млн. человек.</p></div>
                 </div>
                 <div className={styles.image}>
-                    <img src={image}/>
+                    <img className={styles.img} src={image}/>
                 </div>
             </div>
         </div>

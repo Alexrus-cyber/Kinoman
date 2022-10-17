@@ -15,6 +15,7 @@ import AddressForm from "./components/Checkout/AddressForm";
 import {Help} from "./components/Help";
 import {Reviews} from "./components/Reviews";
 import {AboutUs} from "./components/AboutUs";
+import {MyProfile} from "./components/MyProfile";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path={'/Help'} element={<Help/>}/>
             <Route path={'/Review'} element={<Reviews/>}/>
             <Route path={'/About'} element={<AboutUs/>}/>
+            <Route path={'/Profile'} element={<MyProfile/>}/>
           </Routes>
             <Foot/>
       </div>

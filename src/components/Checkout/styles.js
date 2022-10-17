@@ -21,6 +21,7 @@ export default makeStyles((theme) => ({
         },
     },
     paper: {
+        backgroundColor: '#e7e7e7',
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(3),
         padding: theme.spacing(2),
@@ -36,6 +37,7 @@ export default makeStyles((theme) => ({
     },
     stepper: {
         padding: theme.spacing(3, 0, 5),
+        backgroundColor: '#e7e7e7',
     },
     buttons: {
         display: 'flex',

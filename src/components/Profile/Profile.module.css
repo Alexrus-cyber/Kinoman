@@ -1,5 +1,5 @@
 .help {
-    background-color: #121212;
+    background-image: #0C0B0B;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 
 .help .container{
-    padding-top: 60px;
+    padding-top: 100px;
     min-height: 80vh;
     max-width: 1280px;
     overflow: hidden;
@@ -18,6 +18,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media (max-width: 1400px) {
     .help .container {
@@ -34,9 +36,74 @@
     width: 380px;
 }
 
-.image{
+.ticketsContainer{
     display: flex;
+    justify-content: right;
+    width:600px;
+}
+.ticket{
+    border-radius: 10px;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    column-gap: 30px;
+    margin-bottom: 25px;
+}
 
+.link {
+    height: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    transition-duration: 0,5s;
+
+}
+.superCont{
+    display:inline-block;
+}
+.link:hover{
+    font-family: 'Ubuntu', sans-serif;
+    color: crimson;
+    font-weight:400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active{
+    height: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+    border-bottom: 2px crimson solid;
+    text-decoration: none;
+}
+.active:hover{
+    height: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #FFFFFF;
 }
 .p{
     height: 17px;
@@ -47,7 +114,7 @@
     line-height: 17px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-
+    padding-bottom: 50px;
     color: #FFFFFF;
 }
 .h1{
@@ -86,12 +153,10 @@
 }
 .itemContainer{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: flex-start;
     column-gap: 20px;
 }
 .item{
-
 }
 .message{
     display: inline-block;
@@ -110,8 +175,9 @@
 
 .inputContainer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    column-gap: 10px;
 }
 .input{
     display: block;
@@ -145,11 +211,12 @@
 
 .buttonContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 20px;
 }
 .button{
     width: 150px;
-    height: 50px;
+    height: 35px;
     color: #fff;
     font-size: 20px;
     background: #1c501c;

@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logog.PNG';
 import styles from './Navigation/Navigation.module.css';
 import { NavLink} from "react-router-dom";
+import image from '../assets/img/profile-user.png'
 
 export const Navigation = () => {
 
@@ -39,8 +40,8 @@ export const Navigation = () => {
 
                     </Nav>
                 </div>
-                <div style={{width: 256, height : 58.19}}>
-
+                <div style={{width: 256, height : 58.19, display: "flex", justifyContent: "right"}}>
+                    <button><NavLink to={'Profile'}><img className={styles.img} src={image} alt="Logo" /></NavLink></button>
                 </div>
             </Container>
         </Navbar>
