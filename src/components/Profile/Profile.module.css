@@ -28,6 +28,16 @@
 
     }
 }
+@media (max-width: 1180px) {
+    .profile{
+        padding-top: 100px;
+    }
+    .profile .container {
+        transform:scale(0.84);
+
+    }
+
+}
 
 .text {
     display: inline-block;

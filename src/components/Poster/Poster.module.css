@@ -38,6 +38,16 @@
     }
 }
 
+@media (max-width: 1180px) {
+    .placard{
+        padding-top: 0px;
+    }
+    .placard .container {
+        transform:scale(0.84);
+
+    }
+
+}
 
 .posters{
     display: flex;

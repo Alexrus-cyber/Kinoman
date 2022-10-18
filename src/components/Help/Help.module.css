@@ -25,6 +25,14 @@
 
     }
 }
+@media (max-width: 1180px) {
+    .help{
+        padding-top:30px;
+    }
+    .help .container {
+        transform:scale(0.84);
+    }
+}
 
 .text {
     display: inline-block;

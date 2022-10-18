@@ -16,6 +16,18 @@
         width: 100% ;
     }
 }
+@media (max-width: 1180px) {
+    .home {
+        padding-top: 50px;
+    }
+    .home .container {
+        transform:scale(0.84);
+
+    }
+    .home .img{
+        width: 100% ;
+    }
+}
 .img{
     width: 100%;
 }
