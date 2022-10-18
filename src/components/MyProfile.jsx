@@ -35,7 +35,7 @@ export const MyProfile = () => {
         : <UnCheckedTicket setActiveStep={setActiveStep}/>
 
         return(
-            <div className={styles.help}>
+            <div className={styles.profile}>
                 <div className={styles.container}>
                     <div className={styles.text}>
                         <div className={styles.p}><p>Личный кабинет</p></div>
