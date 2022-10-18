@@ -1,4 +1,5 @@
-import styles from './Tickets.module.css'
+import styles from './Tickets.module.css';
+import image from './Kontrol.png';
 
 
 export const Tickets = () => {
@@ -14,7 +15,7 @@ export const Tickets = () => {
             </div>
 
             <div className={styles.control}>
-
+               {/* <img className={styles.img} src={image} alt={'Hello'}/>*/}
             </div>
         </div>
     )

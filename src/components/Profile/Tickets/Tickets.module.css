@@ -28,11 +28,14 @@
     text-align: left;
 }
 .control{
-    background-color: #6c6c6c;
+    background-image: url("Kontrol.png");
     width: 78px;
     height: 124px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     border-radius: 0px 10px 10px 0px;
     border-left: 2px dashed black;
+}
+.img{
+    width: 100%;
+    height: 100%;
 }

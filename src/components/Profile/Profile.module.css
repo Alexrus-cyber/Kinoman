@@ -1,16 +1,17 @@
 .help {
-    background-image: #0C0B0B;
+    background-image: #121212;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow:hidden;
-    padding-top: 100px;
+    padding-top: 200px;
     position : relative;
+
 }
 
 
 .help .container{
-    padding-top: 100px;
+
     min-height: 80vh;
     max-width: 1280px;
     overflow: hidden;
